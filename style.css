@@ -18,7 +18,7 @@ body {
     background: url(images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-color: var(--Pale-blue);
     font-size: 1rem;
     font-family: var(--ff);
@@ -26,21 +26,20 @@ body {
     place-content: center;
     min-height: 100vh;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 650px) {
     body {
         background: url(images/pattern-background-mobile.svg);
     }
     .card {
-        width: 380px;
+        width: 80%;
     }
 }
 @media screen and (max-width: 375px) {
     .card {
-        width: 350px;
+        width: 80%;
     }
 }
 .card {
-    background-color: white;
     width: 400px;
     height: 650px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -58,6 +57,7 @@ body {
     color: var(--Desaturated-blue);
 }
 .card-body {
+    background-color: white;
     width: 400px;
     display: grid;
     gap: 2rem;
